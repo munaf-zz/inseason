@@ -1,0 +1,23 @@
+#viz {
+  /*position: relative;
+  background: #222;*/
+  width: 620px;
+  height: 400px;
+}
+
+#viz div {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  color: #ddd;
+  font: 10px sans-serif;
+}
+
+#viz a {
+  color: #fff;
+  font-weight: bold;
+}
+
+text {
+  font: bold 10px sans-serif;
+}

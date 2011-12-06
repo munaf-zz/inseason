@@ -1,6 +1,20 @@
 // Based on http://vis.stanford.edu/protovis/ex/clock.html
 // Based on http://blog.pixelbreaker.com/polarclock
 
+var months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'];
+
 var w = 620,
     h = 400,
     r = Math.min(w, h) / 1.8,
@@ -41,6 +55,8 @@ g.append("text")
     .attr("dy", "1em")
     .text(function(d) { return d.text; });
 
+var ticks = vis.append("svg:g")
+    .selectAll("g")
 
 // Update arcs.
 d3.timer(function() {

@@ -55,9 +55,6 @@ g.append("text")
     .attr("dy", "1em")
     .text(function(d) { return d.text; });
 
-var ticks = vis.append("svg:g")
-    .selectAll("g")
-
 // Update arcs.
 d3.timer(function() {
   var g = vis.selectAll("g")

@@ -2,6 +2,8 @@
 // http://platform.fatsecret.com/api/Default.aspx?screen=rapih
 // Uses jsOAuth: http://bytespider.github.com/jsOAuth/
 
+// NOTE: FS API is currently non-functional! Waiting on them to reset.
+
 var FS_API = "http://platform.fatsecret.com/rest/server.api";
 
 var FS_CONFIG = {
@@ -16,7 +18,7 @@ function fs_food_search(str) {
   var url = FS_API + "?format=json&method=foods.search&search_expression="+str;
   var id = null;
   FS.get(url, function(data) {
-    // Process JSON response
+    console.log(data)
   });
 }
 
@@ -32,3 +34,5 @@ function fs_failure(data) {
   console.error(data)
   alert("Can't connect to FatSecret API (see console)");
 }
+
+//fs_food_search("apple");

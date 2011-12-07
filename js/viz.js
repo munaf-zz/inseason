@@ -1,38 +1,12 @@
-// Based on http://vis.stanford.edu/protovis/ex/clock.html
-// Based on http://blog.pixelbreaker.com/polarclock
-
-var months = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December'];
-
 var w = 620,
     h = 400,
     r = Math.min(w, h) / 1.8,
     s = .09,
-    fsec = d3.time.format("%S s"),
-    fmin = d3.time.format("%M m"),
-    fhou = d3.time.format("%H h"),
-    fwee = d3.time.format("%a"),
-    fdat = d3.time.format("%d d"),
-    fmon = d3.time.format("%b");
-
-var fill = d3.scale.linear()
-    .range(["hsl(-180, 50%, 50%)", "hsl(180, 50%, 50%)"])
-    .interpolate(d3.interpolateHsl);
+    wedge = 360 / 12 * Math.PI / 180;
 
 var arc = d3.svg.arc()
-    .startAngle(0)
-    .endAngle(function(d) { return d.value * 2 * Math.PI; })
+    .startAngle(function(d) { return d.start * wedge; })
+    .endAngle(function(d) { return d.end * wedge; })
     .innerRadius(function(d) { return d.index * r; })
     .outerRadius(function(d) { return (d.index + s) * r; });
 
@@ -47,54 +21,20 @@ var g = vis.selectAll("g")
   .enter().append("g");
 
 g.append("path")
-    .style("fill", function(d) { return fill(d.value); })
+    .style("fill", function(d) { return d.color; })
     .attr("d", arc);
 
 g.append("text")
     .attr("text-anchor", "middle")
     .attr("dy", "1em")
-    .text(function(d) { return d.text; });
-
-// Update arcs.
-d3.timer(function() {
-  var g = vis.selectAll("g")
-      .data(fields);
-
-  g.select("path")
-      .style("fill", function(d) { return fill(d.value); })
-      .attr("d", arc);
-
-  g.select("text")
-      .attr("dy", function(d) { return d.value < .5 ? "-.5em" : "1em"; })
-      .attr("transform", function(d) {
-        return "rotate(" + 360 * d.value + ")"
-            + "translate(0," + -(d.index + s / 2) * r + ")"
-            + "rotate(" + (d.value < .5 ? -90 : 90) + ")"
-      })
-      .text(function(d) { return d.text; });
-});
+    .text(function(d) { return d.name; });
 
 // Generate the fields for the current date/time.
 function fields() {
-  var d = new Date;
-
-  function days() {
-    return 32 - new Date(d.getYear(), d.getMonth(), 32).getDate();
-  }
-
-  var second = (d.getSeconds() + d.getMilliseconds() / 1000) / 60,
-      minute = (d.getMinutes() + second) / 60,
-      hour = (d.getHours() + minute) / 24,
-      weekday = (d.getDay() + hour) / 7,
-      date = (d.getDate() - 1 + hour) / days(),
-      month = (d.getMonth() + date) / 12;
-
   return [
-    {value: second,  index: .7, text: fsec(d)},
-    {value: minute,  index: .6, text: fmin(d)},
-    {value: hour,    index: .5, text: fhou(d)},
-    {value: weekday, index: .3, text: fwee(d)},
-    {value: date,    index: .2, text: fdat(d)},
-    {value: month,   index: .1, text: fmon(d)},
+    {index: 0.1, name: "Apples",      color: "red", start: 0, end: 3},
+    {index: 0.2, name: "Blueberries", color: "blue", start: 0, end: 6},
+    {index: 0.3, name: "Spinach",     color: "green", start: 1, end: 4},
+    {index: 0.4, name: "Banana",      color: "yellow", start: 5, end: 11},
   ];
 }

@@ -6,12 +6,43 @@
   <script type="text/javascript" src="js/lib/jsOAuth-1.3.1.js"></script>
   <script type="text/javascript" src="js/lib/d3.min.js"></script>
   <script type="text/javascript" src="js/lib/d3.time.min.js"></script>
-  <!--<script src="http://platform.fatsecret.com/js?key=4d8469cc5a794a91abab7e12b6f625b7"></script>-->
   <!-- Styles -->
   <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/viz.css" />
 </head>
 <body>
+
+<?php
+require_once('fs-lib/FatSecretAPI.php');
+require_once('fs-lib/config.php');
+
+$API = new FatSecretAPI(API_KEY, API_SECRET);
+
+$token;
+$secret;
+
+try {
+	$API->ProfileCreate(null, $token, $secret);
+	print '<div>auth_token: ' . $token . '</div>';
+	print '<div>auth_secret: ' . $secret . '</div>';
+}
+catch(FatSecretException $ex) {
+	print '<div>Error: ' . $ex->getCode() . ' - ' . $ex->getMessage() . '</div>';
+}
+
+$auth = array(token=>$token, secret=>$secret);
+$sessionKey;
+
+try {
+    $API->ProfileRequestScriptSessionKey($auth, null, null, null, true, $sessionKey);
+    setCookie("fatsecret_session_key", $sessionKey); 
+    print '<div>session_key: ' . $sessionKey . '</div><br />';
+}
+catch(FatSecretException $ex) {
+	print '<div>Error: ' . $ex->getCode() . ' - ' . $ex->getMessage() . '</div>';
+}
+?>
+
   <div class="container">
     <div class="row" id="headline">
       <h1>What's Good to Eat Near You?</h1>
@@ -118,3 +149,4 @@
   <script type="text/javascript" src="js/viz.js"></script>
 </body>
 </html>
+

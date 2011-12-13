@@ -427,6 +427,10 @@ exports.OAuth = (function (global) {
                 }
 
                 if(appendQueryString || method == 'GET') {
+                    // [LNF] Since we're just doing GET requests, it's probably best to
+                    // just start slapping the oauth params on the URL here. Basically
+                    // just get everything from headerParams and add it.
+                    // ...
                     url.query.setQueryParams(data);
                     query = null;
                 } else if(!withFile){

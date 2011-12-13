@@ -17,7 +17,7 @@ var FS = new OAuth(FS_CONFIG);
 
 // Returns food ID based on search term
 function fs_food_search(str) {
-  var url = FS_API + "?format=json&method=foods.search&search_expression="+str;
+  var url = FS_API + "?format=json&method=foods.search&search_expression=" + str;
   var id = null;
   // Part of the problem with FatSecret + OAuth has to do with CORS. I think the
   // browser is not accepting the response (or not allowing it in the first place).
@@ -35,6 +35,13 @@ function fs_food_search(str) {
   // BS though because if you check the headers it is most definitely there and it
   // is set correctly, so I'm not sure what the deal is. All I know is I've spent
   // way too much time trying to get this thing to work. Not sure what to try next.
+  //
+  // Later...
+  // Further ramblings: It seems as though the (awful) FatSecret API wants all the
+  // oauth params not just included in the auth header, but actually put on the
+  // HTTP request as well. *sigh* So now I'm looking into modifying the jsoauth
+  // component to do that more easily, since we also need the generated SHA1 sig
+  // as well. (Yeah.)
   var ops = {
   	method: 'GET',
   	url: url,

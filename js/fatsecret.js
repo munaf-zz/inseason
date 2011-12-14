@@ -53,10 +53,10 @@ function fs_all_nutritions(foodarray) {
 }
 
 function fs_success(data) {
-  console.log(data);
+  console.log(JSON.parse(data.text));
 }
 
 function fs_failure(data) {
-  console.error(data);
+  console.error(JSON.parse(data.text));
   alert("Can't connect to FatSecret API (see console)");
 }

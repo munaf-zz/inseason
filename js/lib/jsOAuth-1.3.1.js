@@ -417,6 +417,8 @@ exports.OAuth = (function (global) {
                 urlString = url.scheme + '://' + url.host + url.path;
                 signatureString = toSignatureBaseString(method, urlString, headerParams, signatureData);
 
+                console.log("sigString=" + signatureString);
+
                 signature = OAuth.signatureMethod[signatureMethod](oauth.consumerSecret, oauth.accessTokenSecret, signatureString);
 
                 headerParams.oauth_signature = signature;
@@ -430,7 +432,20 @@ exports.OAuth = (function (global) {
                     // [LNF] Since we're just doing GET requests, it's probably best to
                     // just start slapping the oauth params on the URL here. Basically
                     // just get everything from headerParams and add it.
-                    // ...
+                    
+                    var qsHeaders = ObjectHandler.cloneObject(headerParams);
+                    delete qsHeaders['oauth_verifier'];   // FS doesn't support the verifier param
+                    console.log(headerParams);
+                    console.log(qsHeaders);
+                    url.query.setQueryParams(qsHeaders);
+                    
+                    // Now it's complaining that the signature isn't valid. It looks like it's
+                    // being calculated right, but perhaps it doesn't like the fact that the URL
+                    // includes the QS params. Maybe save those for the request? I'm not sure.
+                    // The documentation is awful.
+                    
+                    // [LNF] end modifications
+                    
                     url.query.setQueryParams(data);
                     query = null;
                 } else if(!withFile){
@@ -995,3 +1010,33 @@ exports.OAuth = (function (global) {
         return output;
     };
 })(this);
+
+// [LNF] Just a simple deep-copy utility.
+var ObjectHandler = {
+    cloneObject: function(obj) {
+        var tempClone = {};
+
+        if (typeof(obj) == "object")
+            for (prop in obj)
+                if ((typeof(obj[prop]) == "object") && (obj[prop]).__isArray)
+                    tempClone[prop] = this.cloneArray(obj[prop]);
+                else if (typeof(obj[prop]) == "object")
+                    tempClone[prop] = this.cloneObject(obj[prop]);
+                else
+                    tempClone[prop] = obj[prop];
+
+        return tempClone;
+    },
+    cloneArray: function(arr) {
+        var tempClone = [];
+
+        for (var arrIndex = 0; arrIndex <= arr.length; arrIndex++)
+            if (typeof(arr[arrIndex]) == "object")
+                tempClone.push(this.cloneObject(arr[arrIndex]));
+            else
+                tempClone.push(arr[arrIndex]);
+
+        return tempClone;
+    }
+};
+

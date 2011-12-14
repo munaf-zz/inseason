@@ -229,6 +229,7 @@ exports.OAuth = (function (global) {
                 }
             }
         } else {
+          console.log("in here");
             for (i = 0; i < arg_length; i += 2) {
                 // treat each arg as key, then value
                 querystring[args[i]] = args[i+1];
@@ -398,6 +399,14 @@ exports.OAuth = (function (global) {
                 };
 
                 signatureMethod = oauth.signatureMethod;
+                
+                // [LNF] FatScret does not like using these to calculate the signature. At all.
+                
+                delete headerParams['oauth_verifier'];   // FS doesn't support the verifier param
+                delete headerParams['oauth_callback'];   // These next two aren't used for now
+                delete headerParams['oauth_token'];
+                
+                // [LNF] end
 
                 // According to the OAuth spec
                 // if data is transfered using
@@ -417,8 +426,6 @@ exports.OAuth = (function (global) {
                 urlString = url.scheme + '://' + url.host + url.path;
                 signatureString = toSignatureBaseString(method, urlString, headerParams, signatureData);
 
-                console.log("sigString=" + signatureString);
-
                 signature = OAuth.signatureMethod[signatureMethod](oauth.consumerSecret, oauth.accessTokenSecret, signatureString);
 
                 headerParams.oauth_signature = signature;
@@ -433,23 +440,17 @@ exports.OAuth = (function (global) {
                     // just start slapping the oauth params on the URL here. Basically
                     // just get everything from headerParams and add it.
                     
-                    var qsHeaders = ObjectHandler.cloneObject(headerParams);
-                    delete qsHeaders['oauth_verifier'];   // FS doesn't support the verifier param
-                    console.log(headerParams);
-                    console.log(qsHeaders);
-                    url.query.setQueryParams(qsHeaders);
+                    var oauthHeaders = ObjectHandler.cloneObject(headerParams);
+                    url.query.setQueryParams(oauthHeaders);
                     
-                    // Now it's complaining that the signature isn't valid. It looks like it's
-                    // being calculated right, but perhaps it doesn't like the fact that the URL
-                    // includes the QS params. Maybe save those for the request? I'm not sure.
-                    // The documentation is awful.
-                    
-                    // [LNF] end modifications
+                    // [LNF] end
                     
                     url.query.setQueryParams(data);
                     query = null;
-                } else if(!withFile){
+                } else if(!withFile){                    
                     if (typeof data == 'string') {
+                        // [LNF] Strictly speaking this path should also add oauth headers, but
+                        // we won't be using it.
                         query = data;
                         if (!('Content-Type' in headers)) {
                             headers['Content-Type'] = 'text/plain';
@@ -458,12 +459,21 @@ exports.OAuth = (function (global) {
                         for(i in data) {
                             query.push(OAuth.urlEncode(i) + '=' + OAuth.urlEncode(data[i] + ''));
                         }
+                        
+                        // [LNF] FatSecret wants the oauth params posted as well.
+                        
+                        var oauthHeaders = ObjectHandler.cloneObject(headerParams);
+                        for (i in oauthHeaders) {
+                          query.push(OAuth.urlEncode(i) + '=' + OAuth.urlEncode(oauthHeaders[i] + ''));
+                        }
+                        
+                        // [LNF] end
+                        
                         query = query.sort().join('&');
                         if (!('Content-Type' in headers)) {
                             headers['Content-Type'] = 'application/x-www-form-urlencoded';
                         }
                     }
-
                 } else if(withFile) {
                     // When using FormData multipart content type
                     // is used by default and required header

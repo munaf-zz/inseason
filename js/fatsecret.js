@@ -29,8 +29,14 @@ function fs_food_search(food) {
     // I have modified jsOAuth so that both GET and POST work correctly now.
   	method: 'POST',
   	url: FS_API,
-  	success: fs_success,
-  	failure: fs_failure,
+  	success: function(data) {
+  	  console.log(JSON.parse(data.text));
+  	  console.log(JSON.parse(data.text).foods.food[0].food_description);
+  	},
+  	failure: function(data) {
+  	  console.error(JSON.parse(data.text));
+      alert("Can't connect to FatSecret API (see console)");
+  	},
   	headers: {
   	  // CORS is still an issue. Best bet is to run with security disabled for now.
   		'Access-Control-Allow-Origin': '*'
@@ -50,13 +56,4 @@ function fs_nutrition(food_id) {
 
 // Returnns array of nutrition info based on array of food IDs
 function fs_all_nutritions(foodarray) {
-}
-
-function fs_success(data) {
-  console.log(JSON.parse(data.text));
-}
-
-function fs_failure(data) {
-  console.error(JSON.parse(data.text));
-  alert("Can't connect to FatSecret API (see console)");
 }

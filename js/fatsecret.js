@@ -4,7 +4,7 @@
 
 var FS_API = "http://platform.fatsecret.com/rest/server.api";
 
-// Replaced Munaf's (seemingly broken) API keys with my own.
+// These are Naim's API keys
 var FS_CONFIG = {
   consumerKey: "af74e371df6944b1872993af862cc2d2",
   consumerSecret: "b37852881e45426f870067ef7c313d50"
@@ -15,6 +15,7 @@ var FS = new OAuth(FS_CONFIG);
 // "Cache" object for foods
 var FOOD_CACHE = new Array();
 
+// Fetches food objects for each food name given
 function fs_getFoods(foods, clientCallback) {
   
   for (i in foods) {

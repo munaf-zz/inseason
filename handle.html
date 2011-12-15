@@ -25,7 +25,7 @@ var w = 400,
     xCenter = w / 2,
     yCenter = h / 2,
     radius = 160,
-    initAngle = degToRad(45);
+    initAngle = degToRad(270);
 
 // New PV behavior that will translate mouse position onto a circle
 pv.Behavior.dragCircle = function() {
@@ -83,16 +83,87 @@ pv.Behavior.dragCircle = function() {
     return mousedown;
 };
 
-function radToDeg(rads) {
-    return rads * (180 / Math.PI);
-}
-
 function degToRad(degs) {
     return degs * (Math.PI / 180);
 }
 
+function radToDeg(rads) {
+    return rads * (180 / Math.PI);
+}
+
 function getCurrentAngle() {
     return handle[1].theta;
+}
+
+var monthAngles = [
+    {
+        month: 1,
+        startAngle: degToRad(270),
+        endAngle: degToRad(300)
+    },
+    {
+        month: 2,
+        startAngle: degToRad(300),
+        endAngle: degToRad(330)
+    },
+    {
+        month: 3,
+        startAngle: degToRad(330),
+        endAngle: degToRad(360)
+    },
+    {
+        month: 4,
+        startAngle: degToRad(0),
+        endAngle: degToRad(30)
+    },
+    {
+        month: 5,
+        startAngle: degToRad(30),
+        endAngle: degToRad(60)
+    },
+    {
+        month: 6,
+        startAngle: degToRad(60),
+        endAngle: degToRad(90)
+    },
+    {
+        month: 7,
+        startAngle: degToRad(90),
+        endAngle: degToRad(120)
+    },
+    {
+        month: 8,
+        startAngle: degToRad(120),
+        endAngle: degToRad(150)
+    },
+    {
+        month: 9,
+        startAngle: degToRad(150),
+        endAngle: degToRad(180)
+    },
+    {
+        month: 10,
+        startAngle: degToRad(180),
+        endAngle: degToRad(210)
+    },
+    {
+        month: 11,
+        startAngle: degToRad(210),
+        endAngle: degToRad(240)
+    },
+    {
+        month: 12,
+        startAngle: degToRad(240),
+        endAngle: degToRad(270)
+    }
+];
+
+function getSelectedMonth() {
+    var theta = getCurrentAngle();
+    for (m in monthAngles)
+        if (theta > monthAngles[m].startAngle &&
+            theta < monthAngles[m].endAngle)
+            return monthAngles[m].month;
 }
 
 // The actual handle itself

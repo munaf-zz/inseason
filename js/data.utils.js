@@ -1,11 +1,12 @@
 // Global color mapping object.
 var COLORS = {
-  'red': "#ff9896",
-  'blue': "#aec7e8",
-  'green': "#98df8a",
-  'orange': "#ffbb78",
-  'yellow': "#ffff99",
-  'purple': "#c5b0d5"
+  "red": "#ff9896",
+  "blue": "#aec7e8",
+  "green": "#98df8a",
+  "orange": "#ffbb78",
+  "yellow": "#ffff99",
+  "purple": "#c5b0d5",
+  "white": "#ffffff"
 };
 
 // Generates an array geared for searching FatSecret.

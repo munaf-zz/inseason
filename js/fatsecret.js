@@ -6,7 +6,7 @@ var FS_API = "http://platform.fatsecret.com/rest/server.api";
 
 // Replaced Munaf's (seemingly broken) API keys with my own.
 var FS_CONFIG = {
-  consumerKey:    "af74e371df6944b1872993af862cc2d2",
+  consumerKey: "af74e371df6944b1872993af862cc2d2",
   consumerSecret: "b37852881e45426f870067ef7c313d50"
 };
 

@@ -9,18 +9,22 @@ var data = [
 			[
 				{
 					'food': 'Apricots',
+					'nutrition': {},
 					'colors': ['yellow','orange']
 				},
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				},
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				},
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -31,6 +35,7 @@ var data = [
 			[
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				}
 			]
@@ -69,6 +74,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -79,6 +85,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -89,6 +96,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -99,6 +107,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -109,6 +118,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -181,6 +191,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -191,6 +202,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -201,6 +213,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -211,6 +224,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -373,6 +387,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -383,6 +398,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -393,6 +409,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -403,6 +420,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -475,6 +493,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -485,6 +504,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -495,6 +515,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -505,6 +526,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -528,6 +550,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -538,6 +561,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -548,6 +572,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -558,6 +583,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -568,6 +594,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -578,6 +605,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -588,6 +616,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -598,6 +627,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -608,6 +638,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -618,6 +649,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -628,6 +660,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -638,6 +671,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -654,6 +688,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -664,6 +699,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -674,6 +710,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -684,6 +721,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -694,6 +732,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -704,6 +743,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -721,6 +761,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -731,6 +772,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -741,6 +783,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -751,6 +794,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -761,6 +805,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -819,6 +864,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -829,6 +875,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -839,6 +886,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -849,6 +897,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -859,6 +908,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -869,6 +919,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -892,6 +943,7 @@ var data = [
 			[
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -902,6 +954,7 @@ var data = [
 			[
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -912,6 +965,7 @@ var data = [
 			[
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -922,6 +976,7 @@ var data = [
 			[
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -932,6 +987,7 @@ var data = [
 			[
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -942,10 +998,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -956,10 +1014,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -970,10 +1030,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -984,10 +1046,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -998,10 +1062,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -1012,6 +1078,7 @@ var data = [
 			[
 				{
 					'food': 'Avocados',
+					'nutrition': {},
 					'colors': ['green']
 				}
 			]
@@ -1347,6 +1414,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1357,6 +1425,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1367,6 +1436,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1377,6 +1447,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1387,6 +1458,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1583,6 +1655,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1593,6 +1666,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1603,6 +1677,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1613,6 +1688,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1623,6 +1699,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1633,6 +1710,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1643,6 +1721,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1653,6 +1732,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1663,6 +1743,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1673,6 +1754,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1683,6 +1765,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1693,6 +1776,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1744,6 +1828,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1754,6 +1839,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1764,6 +1850,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1774,6 +1861,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1784,6 +1872,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1794,6 +1883,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -1831,6 +1921,7 @@ var data = [
 			[
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				}
 			]
@@ -1841,6 +1932,7 @@ var data = [
 			[
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				}
 			]
@@ -1851,6 +1943,7 @@ var data = [
 			[
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				}
 			]
@@ -1861,6 +1954,7 @@ var data = [
 			[
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				}
 			]
@@ -1871,10 +1965,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				}
 			]
@@ -1885,10 +1981,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				}
 			]
@@ -1899,10 +1997,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				}
 			]
@@ -1913,10 +2013,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				}
 			]
@@ -1927,10 +2029,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				}
 			]
@@ -1941,6 +2045,7 @@ var data = [
 			[
 				{
 					'food': 'Aspargus',
+					'nutrition': {},
 					'colors': ['green','white']
 				}
 			]
@@ -1999,6 +2104,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2009,6 +2115,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2019,6 +2126,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2029,6 +2137,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2039,6 +2148,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2194,6 +2304,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2204,6 +2315,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2214,6 +2326,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2224,6 +2337,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2234,6 +2348,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2299,6 +2414,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2309,6 +2425,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2319,6 +2436,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2329,6 +2447,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2339,6 +2458,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2362,6 +2482,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2372,6 +2493,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2382,6 +2504,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2392,6 +2515,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2402,6 +2526,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2412,6 +2537,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2422,6 +2548,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2432,6 +2559,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2442,6 +2570,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2452,6 +2581,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2462,6 +2592,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2472,6 +2603,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2627,6 +2759,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2637,6 +2770,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2647,6 +2781,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2657,6 +2792,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2729,6 +2865,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2739,6 +2876,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2749,6 +2887,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2759,6 +2898,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2831,6 +2971,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2841,6 +2982,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2851,6 +2993,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2861,6 +3004,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2884,6 +3028,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2894,6 +3039,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2904,6 +3050,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2949,6 +3096,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2959,6 +3107,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2969,6 +3118,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -2979,6 +3129,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3037,6 +3188,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3047,6 +3199,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3057,6 +3210,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3067,6 +3221,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3077,6 +3232,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3135,6 +3291,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3145,6 +3302,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3155,6 +3313,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3165,6 +3324,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3175,6 +3335,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3185,6 +3346,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3208,6 +3370,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3218,6 +3381,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3228,6 +3392,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3238,6 +3403,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3248,6 +3414,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3258,6 +3425,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3268,6 +3436,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3278,6 +3447,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3288,6 +3458,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3298,6 +3469,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3308,6 +3480,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3318,6 +3491,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3473,6 +3647,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3483,6 +3658,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3493,6 +3669,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3503,6 +3680,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3513,6 +3691,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3578,6 +3757,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3588,6 +3768,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3598,6 +3779,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3608,6 +3790,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3673,6 +3856,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3683,6 +3867,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3693,6 +3878,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3703,6 +3889,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3713,6 +3900,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3785,6 +3973,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3795,6 +3984,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3805,6 +3995,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3815,6 +4006,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3977,6 +4169,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3987,6 +4180,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -3997,6 +4191,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4007,6 +4202,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4017,6 +4213,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4165,6 +4362,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4175,6 +4373,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4185,6 +4384,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4195,6 +4395,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4205,6 +4406,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4270,6 +4472,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4280,6 +4483,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4290,6 +4494,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4300,6 +4505,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4310,6 +4516,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4340,6 +4547,7 @@ var data = [
 			[
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				}
 			]
@@ -4350,6 +4558,7 @@ var data = [
 			[
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				}
 			]
@@ -4360,6 +4569,7 @@ var data = [
 			[
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				}
 			]
@@ -4370,6 +4580,7 @@ var data = [
 			[
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				}
 			]
@@ -4380,6 +4591,7 @@ var data = [
 			[
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				}
 			]
@@ -4390,10 +4602,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				}
 			]
@@ -4404,10 +4618,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				}
 			]
@@ -4418,10 +4634,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				}
 			]
@@ -4432,10 +4650,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				}
 			]
@@ -4446,10 +4666,12 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				},
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				}
 			]
@@ -4460,6 +4682,7 @@ var data = [
 			[
 				{
 					'food': 'Asian Pears',
+					'nutrition': {},
 					'colors': ['yellow']
 				}
 			]
@@ -4746,6 +4969,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4756,6 +4980,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4766,6 +4991,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4776,6 +5002,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4786,6 +5013,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4796,6 +5024,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4806,6 +5035,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4816,6 +5046,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4826,6 +5057,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4836,6 +5068,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4846,6 +5079,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4856,6 +5090,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4872,6 +5107,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4882,6 +5118,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4934,6 +5171,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4944,6 +5182,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4954,6 +5193,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4964,6 +5204,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -4994,6 +5235,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5108,6 +5350,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5118,6 +5361,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5128,6 +5372,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5138,6 +5383,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5148,6 +5394,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5158,6 +5405,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5216,6 +5464,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5226,6 +5475,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5236,6 +5486,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5246,6 +5497,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5256,6 +5508,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5266,6 +5519,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5289,6 +5543,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5341,6 +5596,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5351,6 +5607,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5361,6 +5618,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5371,6 +5629,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5381,6 +5640,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5446,6 +5706,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5456,6 +5717,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5466,6 +5728,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5476,6 +5739,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5631,6 +5895,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5641,6 +5906,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5651,6 +5917,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5661,6 +5928,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5671,6 +5939,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5694,6 +5963,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5704,6 +5974,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5714,6 +5985,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5724,6 +5996,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5734,6 +6007,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5744,6 +6018,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5754,6 +6029,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5764,6 +6040,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5774,6 +6051,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5784,6 +6062,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5794,6 +6073,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5804,6 +6084,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5862,6 +6143,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5872,6 +6154,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5882,6 +6165,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5892,6 +6176,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -5902,6 +6187,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -6015,6 +6301,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -6025,6 +6312,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -6035,6 +6323,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -6045,6 +6334,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -6055,6 +6345,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]
@@ -6065,6 +6356,7 @@ var data = [
 			[
 				{
 					'food': 'Apples',
+					'nutrition': {},
 					'colors': ['red','green','yellow']
 				}
 			]

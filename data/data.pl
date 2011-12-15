@@ -143,6 +143,8 @@ foreach my $state (@states) {
                 
                 print OUT "\t\t\t\t{\n";
                 print OUT "\t\t\t\t\t'food': '", $row[0], "',\n";
+                # Stub for nutrition info
+                print OUT "\t\t\t\t\t'nutrition': {},\n";
                 print OUT "\t\t\t\t\t'colors': ['", join('\',\'', split(/;/, $row[1])), "']\n";
 
                 # End food object

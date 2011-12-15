@@ -1,3 +1,7 @@
+
+// Working data set for currently selected state.
+var STATE_DATA;
+
 // Global color mapping object.
 var COLORS = {
   "red": "#ff9896",

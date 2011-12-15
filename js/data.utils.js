@@ -8,53 +8,18 @@ var COLORS = {
   'purple': "#c5b0d5"
 };
 
-// Generates an object geared for searching FatSecret.
-// Called when minute hand is over a specific month.
-function dataByColor(state, month) { 
-  var i, j,
-      currFood,
-      color,
-      colIndex,
-      arcs = [], 
+// Generates an array geared for searching FatSecret.
+// Called when minute hand is dropped over a specific month.
+// state, month are indexes for the global data array.
+function selectedFoods(state, month) { 
+  var i,
+      searchList = [], 
       foods = data[state].months[month].foods;
 
-  // Gets the color index from the current set of arcs, if it exists.
-  function ind(col) {
-    var out = NaN;
-    for (var i=0; i<arcs.length; i++) {
-      if (arcs[i].color == col) {
-        out = i;
-        break;
-      }
-    }
-    return out;
-  }
+  for (i = 0; i < foods.length; i++) 
+    searchList.push(foods[i].food);
 
-  // Loop through each food and create a color-based array
-  for (i=0; i<foods.length; i++) {
-    currFood = {
-      food: foods[i].food,
-      nutrition: foods[i].nutrition
-    };
-
-    for (j=0; j<foods[i].colors.length; j++) {
-      color = foods[i].colors[j];
-      colIndex = ind(color);
-
-      if (colIndex >= 0) {
-        arcs[colIndex].foods.push(currFood);
-      }
-      else {
-        arcs.push({
-          color: color,
-          foods: [currFood]
-        });
-      }
-
-    }
-  }
-
-  return arcs; // array of arcs, labeled by color
+  return searchList;
 }
 
 // Generates an object of color arcs, year-round for a specific state.

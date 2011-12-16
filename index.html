@@ -146,125 +146,6 @@
       <div class="span-two-thirds" id="viz">
       <script type="text/javascript+protovis">
 
-var w = 500,
-    h = 500,
-    radius = w / 2,
-    xCenter = w / 2,
-    yCenter = w / 2,
-    initAngle = 0,
-    section = (2*Math.PI) / 12;
-
-var vis = new pv.Panel()
-    .width(radius * 2)
-    .height(radius * 2);
-
-// Arcs representing food colors
-var arcs = vis.add(pv.Wedge)
-    .data(STATE_DATA)
-    .left(radius)
-    .bottom(radius)
-    .innerRadius(function(d) radius * ((COLORS[d.color].ind + 1) / 10))
-    .outerRadius(function(d) radius * (((COLORS[d.color].ind + 1) / 10) + .1))
-    .startAngle(function(d) d.start * section - (Math.PI/2))
-    .angle(function(d) 2 * Math.PI / 12)
-    .fillStyle(function(d) COLORS[d.color].hex)
-    .lineWidth(1)
-    .strokeStyle("#444")
-    .text("blahhhh")
-    .event('mouseover', function(d) {linkedBrush(d); pv.Behavior.tipsy({gravity: "w", fade: true});})
-    .event('mouseout', function(d) clearLinkedBrush(d));
-
-// Radial gridlines
-var months = vis.add(pv.Wedge)
-    .data(MONTHS)
-    .innerRadius(function(d) 10)
-    .outerRadius(function(d) radius + 10)
-    .fillStyle(null)
-    .strokeStyle("black")
-    .startAngle(function(d) this.index * section)
-    .angle(function() Math.PI/6);
-
-months.anchor('outer').add(pv.Label)
-    .text(function(d) d)
-    .textStyle('white')
-    .textAlign('center')
-    .textBaseline('bottom')
-    .textAngle(function() this.anchorTarget().midAngle() + Math.PI / 2);
-
-// New PV behavior that will translate mouse position onto a circle
-pv.Behavior.dragCircle = function() {
-    var scene, // scene context
-        index, // scene context
-        p, // particle being dragged
-        v1, // initial mouse-particle offset
-        max;
-
-    /** @private */
-    function mousedown(d) {
-        index = this.index;
-        scene = this.scene;
-        var m = this.mouse();
-        v1 = ((p = d).fix = pv.vector(d.x, d.y)).minus(m);
-        max = {
-            x: this.parent.width() - (d.dx || 0),
-            y: this.parent.height() - (d.dy || 0)
-        };
-        scene.mark.context(scene, index, function() { this.render(); });
-        pv.Mark.dispatch("dragstart", scene, index);
-    }
-
-    /** @private */
-    function mousemove() {
-        if (!scene) return;
-        scene.mark.context(scene, index, function() {
-            var m = this.mouse();
-            // [LNF] p0 is the origin of the viz
-            var p0 = {
-                x: xCenter,
-                y: yCenter 
-            };
-            // [LNF] Calc the angle between the mouse and the origin
-            p.theta = Math.atan2(m.y - p0.y, m.x - p0.x);
-            // [LNF] Translate the angle into cartesian coordinates, scaled to the center
-            p.x = p.fix.x = (Math.cos(p.theta) * radius) + xCenter;
-            p.y = p.fix.y = (Math.sin(p.theta) * radius) + yCenter;
-            this.render();
-        });
-        pv.Mark.dispatch("drag", scene, index);
-    }
-
-    /** @private */
-    function mouseup() {
-        if (!scene) return;
-        p.fix = null;
-        scene.mark.context(scene, index, function() { this.render(); });
-        pv.Mark.dispatch("dragend", scene, index);
-        scene = null;
-    }
-
-    pv.listen(window, "mousemove", mousemove);
-    pv.listen(window, "mouseup", mouseup);
-    return mousedown;
-};
-
-function linkedBrush(foodsObj) {
-  var cls = 'linked-' + foodsObj.color;
-  for (foodIdx in foodsObj.foods) 
-    $('#' + foodsObj.foods[foodIdx].food).addClass(cls);
-  console.log($('#'+foodsObj.foods[0].food));
-}
-
-function clearLinkedBrush(foodsObj) {
-  var cls = 'linked-' + foodsObj.color;
-  for (foodIdx in foodsObj.foods) 
-    $('#' + foodsObj.foods[foodIdx].food).removeClass(cls);
-
-}
-
-function getCurrentAngle() {
-    return handle[1].theta;
-}
-
 // This maps each month segment to a set of angles
 var monthAngles = [
     {
@@ -329,6 +210,127 @@ var monthAngles = [
     }
 ];
 
+var currentMonth = (new Date()).getMonth();
+
+var w = 500,
+    h = 500,
+    radius = w / 2,
+    xCenter = w / 2,
+    yCenter = w / 2,
+    initAngle = monthAngles[currentMonth].startAngle + (Math.PI / 12),
+    section = (2*Math.PI) / 12;
+
+var vis = new pv.Panel()
+    .width(radius * 2)
+    .height(radius * 2);
+
+// Arcs representing food colors
+var arcs = vis.add(pv.Wedge)
+    .data(STATE_DATA)
+    .left(radius)
+    .bottom(radius)
+    .innerRadius(function(d) radius * ((COLORS[d.color].ind + 1) / 10))
+    .outerRadius(function(d) radius * (((COLORS[d.color].ind + 1) / 10) + .1))
+    .startAngle(function(d) d.start * section - (Math.PI/2))
+    .angle(function(d) 2 * Math.PI / 12)
+    .fillStyle(function(d) COLORS[d.color].hex)
+    .lineWidth(1)
+    .strokeStyle("#444")
+    .text("blahhhh")
+    .event('mouseover', function(d) {linkedBrush(d); pv.Behavior.tipsy({gravity: "w", fade: true});})
+    .event('mouseout', function(d) clearLinkedBrush(d));
+
+// Radial gridlines
+var months = vis.add(pv.Wedge)
+    .data(MONTHS)
+    .innerRadius(function(d) 10)
+    .outerRadius(function(d) radius - 30)
+    .fillStyle(null)
+    .strokeStyle("black")
+    .startAngle(function(d) this.index * section)
+    .angle(function() Math.PI/6);
+
+months.anchor('outer').add(pv.Label)
+    .text(function(d) d)
+    .textStyle('white')
+    .textAlign('center')
+    .textBaseline('bottom')
+    .textAngle(function() this.anchorTarget().midAngle() + Math.PI / 2);
+
+// New PV behavior that will translate mouse position onto a circle
+pv.Behavior.dragCircle = function() {
+    var scene, // scene context
+        index, // scene context
+        p, // particle being dragged
+        v1, // initial mouse-particle offset
+        max;
+
+    /** @private */
+    function mousedown(d) {
+        index = this.index;
+        scene = this.scene;
+        var m = this.mouse();
+        v1 = ((p = d).fix = pv.vector(d.x, d.y)).minus(m);
+        max = {
+            x: this.parent.width() - (d.dx || 0),
+            y: this.parent.height() - (d.dy || 0)
+        };
+        scene.mark.context(scene, index, function() { this.render(); });
+        pv.Mark.dispatch("dragstart", scene, index);
+    }
+
+    /** @private */
+    function mousemove() {
+        if (!scene) return;
+        scene.mark.context(scene, index, function() {
+            var m = this.mouse();
+            // [LNF] p0 is the origin of the viz
+            var p0 = {
+                x: xCenter,
+                y: yCenter 
+            };
+            // [LNF] Calc the angle between the mouse and the origin
+            p.theta = Math.atan2(m.y - p0.y, m.x - p0.x);
+            // [LNF] Translate the angle into cartesian coordinates, scaled to the center
+            p.x = p.fix.x = (Math.cos(p.theta) * (radius * 0.965)) + xCenter;
+            p.y = p.fix.y = (Math.sin(p.theta) * (radius * 0.965)) + yCenter;
+            this.render();
+        });
+        pv.Mark.dispatch("drag", scene, index);
+    }
+
+    /** @private */
+    function mouseup() {
+        if (!scene) return;
+        p.fix = null;
+        scene.mark.context(scene, index, function() { this.render(); });
+        pv.Mark.dispatch("dragend", scene, index);
+        scene = null;
+    }
+
+    pv.listen(window, "mousemove", mousemove);
+    pv.listen(window, "mouseup", mouseup);
+    return mousedown;
+};
+
+function linkedBrush(foodsObj) {
+  var cls = 'linked-' + foodsObj.color;
+  for (foodIdx in foodsObj.foods) 
+    $('#' + foodsObj.foods[foodIdx].food).addClass(cls);
+  console.log($('#'+foodsObj.foods[0].food));
+}
+
+function clearLinkedBrush(foodsObj) {
+  var cls = 'linked-' + foodsObj.color;
+  for (foodIdx in foodsObj.foods) 
+    $('#' + foodsObj.foods[foodIdx].food).removeClass(cls);
+
+}
+
+function getCurrentAngle() {
+    return handle[1].theta;
+}
+
 // Gets the month that the handle is currently resting on
 function getSelectedMonth() {
     var theta = getCurrentAngle();
@@ -349,8 +351,8 @@ var handle = [
     // Handle
     {
         // Default the handle location to initAngle
-        x: (Math.cos(initAngle) * radius) + xCenter,
-        y: (Math.sin(initAngle) * radius) + yCenter,
+        x: (Math.cos(initAngle) * (radius * 0.965)) + xCenter,
+        y: (Math.sin(initAngle) * (radius * 0.965)) + yCenter,
         theta: initAngle
     }
 ];
@@ -361,7 +363,7 @@ vis.add(pv.Line)
     .top(function(d) d.y)
     .interpolate("linear")
     .segmented(false)
-    .strokeStyle("#000")
+    .strokeStyle("#99ccff")
     .lineWidth(2);
 
 // Handle dot
@@ -371,7 +373,7 @@ vis.add(pv.Dot)
     .top(function(d) d.y)
     .radius(7)
     .cursor(function(d) d.origin == true ? "" : "move")
-    .strokeStyle(function(d) d.origin == true ? null : "#000")
+    .strokeStyle(function(d) d.origin == true ? null : "#99ccff")
     .fillStyle(function(d) d.origin == true ? null : this.strokeStyle().alpha(.4))
     .event("mousedown", pv.Behavior.dragCircle())
     .event("dragstart", null)
@@ -426,6 +428,8 @@ function handleUpdate() {
   }
   vis.render();
 }
+
+handleUpdate();
 
 vis.render();
 pv.listen(window, "mousedown", function() self.focus());

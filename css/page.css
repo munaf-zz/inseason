@@ -23,10 +23,10 @@ legend, th {
 }
 
 #location form fieldset legend {
-	padding-top: 4px
+	padding-top: 8px
 }
 #nutrition form fieldset legend {
-	padding-top: 24px
+	padding-top: 27px
 }
 
 #location form fieldset legend,
@@ -38,12 +38,12 @@ label[for="stateSelect"] {
 	text-align: left !important;
 	float: right !important;
 	margin-right: 90px !important;
-	margin-top: -3px;
+	margin-top: -7px;
 	width: 0 !important
 }
 
 #stateSelect {
-	margin-top: -2px
+	margin-top: -9px
 }
 
 #location .input,

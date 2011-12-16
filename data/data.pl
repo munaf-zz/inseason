@@ -71,7 +71,7 @@ my @states = (
     'WA',
     'WV',
     'WI',
-    'WY',
+    'WY'
 );
 
 my @months = (

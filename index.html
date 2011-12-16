@@ -318,14 +318,14 @@ pv.Behavior.dragCircle = function() {
 function linkedBrush(foodsObj) {
   var cls = 'linked-' + foodsObj.color;
   for (foodIdx in foodsObj.foods) 
-    $('#' + foodsObj.foods[foodIdx].food).addClass(cls);
+    $('#' + foodsObj.foods[foodIdx].food.split(' ').join('')).addClass(cls);
   //console.log($('#'+foodsObj.foods[0].food));
 }
 
 function clearLinkedBrush(foodsObj) {
   var cls = 'linked-' + foodsObj.color;
   for (foodIdx in foodsObj.foods) 
-    $('#' + foodsObj.foods[foodIdx].food).removeClass(cls);
+    $('#' + foodsObj.foods[foodIdx].food.split(' ').join('')).removeClass(cls);
 
 }
 
@@ -421,7 +421,7 @@ function refreshTable() {
         }
         
         var foodHtml =
-        '<tr id="' + food.ourFoodName + '">' +
+        '<tr id="' + food.ourFoodName.split(' ').join('') + '">' +
             '<td>' + food.food.food_name + '</td>' +
             '<td>' + serving.protein + '</td>' +
             '<td>' + serving.calcium + '</td>' +

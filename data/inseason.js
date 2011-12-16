@@ -52,7 +52,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -78,7 +78,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -154,7 +154,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -919,7 +919,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -1040,7 +1040,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -1166,7 +1166,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -1755,7 +1755,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -1831,7 +1831,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -2309,7 +2309,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -2465,7 +2465,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -2606,7 +2606,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -2777,7 +2777,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -2978,7 +2978,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -3194,7 +3194,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -3410,7 +3410,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -3601,7 +3601,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -3797,7 +3797,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -4008,7 +4008,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -4562,7 +4562,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -4638,7 +4638,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -4749,7 +4749,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -4875,7 +4875,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -5220,7 +5220,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -6551,7 +6551,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -6662,7 +6662,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -6778,7 +6778,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -6894,7 +6894,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -7015,7 +7015,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -7556,7 +7556,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -7662,7 +7662,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -7721,7 +7721,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -7752,7 +7752,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -7803,7 +7803,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -8416,7 +8416,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -9019,7 +9019,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Zucchini',
@@ -9120,7 +9120,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -9629,7 +9629,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -9690,7 +9690,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Zucchini',
@@ -10188,7 +10188,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -11411,7 +11411,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -11552,7 +11552,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -12961,7 +12961,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -13077,7 +13077,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -13737,7 +13737,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -13798,7 +13798,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Zucchini',
@@ -13899,7 +13899,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -14648,7 +14648,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -14714,7 +14714,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -14805,7 +14805,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -15330,7 +15330,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -15401,7 +15401,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -15487,7 +15487,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -15598,7 +15598,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -15719,7 +15719,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -15840,7 +15840,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -16237,7 +16237,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -16258,7 +16258,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -16309,7 +16309,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -16953,7 +16953,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -17084,7 +17084,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -17235,7 +17235,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -17371,7 +17371,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -18007,7 +18007,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -18078,7 +18078,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -18144,7 +18144,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -18398,7 +18398,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -18858,7 +18858,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -19387,7 +19387,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -19463,7 +19463,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Zucchini',
@@ -21009,7 +21009,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -21631,7 +21631,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -21657,7 +21657,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -22229,7 +22229,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -22320,7 +22320,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -22411,7 +22411,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -22532,7 +22532,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -22598,7 +22598,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -23733,7 +23733,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -23849,7 +23849,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -25458,7 +25458,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				}
 			]
 		},
@@ -25559,7 +25559,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -26978,7 +26978,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -27029,7 +27029,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -27075,7 +27075,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -27269,7 +27269,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -28090,7 +28090,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -28171,7 +28171,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Sweet Potato',
@@ -29006,7 +29006,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -29072,7 +29072,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -29138,7 +29138,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -29327,7 +29327,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -30655,7 +30655,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -30806,7 +30806,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -30957,7 +30957,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -31533,7 +31533,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -31589,7 +31589,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -31794,7 +31794,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -32172,7 +32172,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Turnips',
@@ -32223,7 +32223,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -32289,7 +32289,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',
@@ -32350,7 +32350,7 @@ var data = [
 				{
 					'food': 'Strawberries',
 					'nutrition': {},
-					'colors': ['red','green']
+					'colors': ['red']
 				},
 				{
 					'food': 'Tomatoes',

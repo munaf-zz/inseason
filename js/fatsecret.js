@@ -19,14 +19,15 @@ var FOOD_CACHE = new Array();
 function fs_getFoods(foods, clientCallback) {
   
   for (i in foods) {
-    
-    if (FOOD_CACHE[foods[i]]) {
+    if (FOOD_CACHE[foods[i].split(' ').join('')]) {
       console.log("Cache hit on " + foods[i]);
       clientCallback(FOOD_CACHE[foods[i]]);
     }
     else {
-      console.log("Querying FS for " + foods[i]);
-      fs_foodSearch(foods[i], clientCallback);
+      setTimeout(function() {
+        console.log("Querying FS for " + foods[i]);
+        fs_foodSearch(foods[i], clientCallback);
+      }, 100);
     }
   }
 }
@@ -78,7 +79,7 @@ function fs_getFood(foodObj, clientFood, clientCallback) {
 	  result['ourFoodName'] = clientFood;
 	  
     console.log("Storing " + foodObj.food_name + " (clientName=" + clientFood + ") in cache");
-    FOOD_CACHE[clientFood] = result;
+    FOOD_CACHE[clientFood.split(' ').join('')] = result;
     
     clientCallback(result);    
   });

@@ -7,7 +7,7 @@ body {
 	color: #ccc;
 }
 
-h1, legend, label, th, td {
+h1, fieldset legend, label, th, td {
 	color: #ccc;
 }
 

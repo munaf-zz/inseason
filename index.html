@@ -319,7 +319,7 @@ function linkedBrush(foodsObj) {
   var cls = 'linked-' + foodsObj.color;
   for (foodIdx in foodsObj.foods) 
     $('#' + foodsObj.foods[foodIdx].food).addClass(cls);
-  console.log($('#'+foodsObj.foods[0].food));
+  //console.log($('#'+foodsObj.foods[0].food));
 }
 
 function clearLinkedBrush(foodsObj) {
@@ -397,11 +397,11 @@ function refreshTable() {
     $("#nutrientsTB").empty();
     
     var foods = selectedFoods(CURRENT_STATE, CURRENT_MONTH);
-    console.log(foods);
+    //console.log(foods);
     
     fs_getFoods(foods, function(food) {
         
-        console.log(food);            
+        //console.log(food);            
         var servingsList = food.food.servings.serving;
         var serving;
         

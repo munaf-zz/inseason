@@ -1,6 +1,6 @@
 
 // Working data set for currently selected state.
-var STATE_DATA;
+var STATE_DATA = arcsPerState(0);
 
 // Global color mapping object.
 var COLORS = {

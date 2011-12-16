@@ -18,7 +18,7 @@ var data = [
 					'colors': ['yellow']
 				},
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				},
@@ -34,7 +34,7 @@ var data = [
 			'foods':
 			[
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				}
@@ -1920,7 +1920,7 @@ var data = [
 			'foods':
 			[
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				}
@@ -1931,7 +1931,7 @@ var data = [
 			'foods':
 			[
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				}
@@ -1942,7 +1942,7 @@ var data = [
 			'foods':
 			[
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				}
@@ -1953,7 +1953,7 @@ var data = [
 			'foods':
 			[
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				}
@@ -1969,7 +1969,7 @@ var data = [
 					'colors': ['red','green','yellow']
 				},
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				}
@@ -1985,7 +1985,7 @@ var data = [
 					'colors': ['red','green','yellow']
 				},
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				}
@@ -2001,7 +2001,7 @@ var data = [
 					'colors': ['red','green','yellow']
 				},
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				}
@@ -2017,7 +2017,7 @@ var data = [
 					'colors': ['red','green','yellow']
 				},
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				}
@@ -2033,7 +2033,7 @@ var data = [
 					'colors': ['red','green','yellow']
 				},
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				}
@@ -2044,7 +2044,7 @@ var data = [
 			'foods':
 			[
 				{
-					'food': 'Aspargus',
+					'food': 'Asparagus',
 					'nutrition': {},
 					'colors': ['green','white']
 				}

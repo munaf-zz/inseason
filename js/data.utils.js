@@ -1,7 +1,8 @@
 
 // Working data set for currently selected state.
 var CURRENT_STATE = 0;
-var CURRENT_MONTH = 1;
+var CURRENT_MONTH = undefined;
+var OTHER_MONTH = undefined;
 var STATE_DATA = arcsPerState(CURRENT_STATE);
 
 // Global color mapping object.

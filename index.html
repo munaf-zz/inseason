@@ -168,7 +168,7 @@
             .angle(function(d) 2 * Math.PI * (d.len/12))
             .fillStyle(function(d) COLORS[d.color])
             .lineWidth(1)
-            .strokeStyle("#999");
+            .strokeStyle("#444");
 
         // Radial gridlines
         var months = vis.add(pv.Wedge)
@@ -353,9 +353,16 @@
             .event("drag", handleUpdate);
         
         function handleUpdate() {
-          CURRENT_MONTH = getSelectedMonth();
-          var foods = selectedFoods(CURRENT_STATE, CURRENT_MONTH);
-          console.log(foods);
+            CURRENT_MONTH = getSelectedMonth();
+            
+            if (CURRENT_MONTH != OTHER_MONTH) {
+                OTHER_MONTH = CURRENT_MONTH;
+                var foods = selectedFoods(CURRENT_STATE, CURRENT_MONTH);
+                console.log(foods);
+                fs_getFoods(foods, function(food) {
+                    console.log(food);
+                });
+          }
           vis.render();
         }
 

@@ -45,6 +45,8 @@ function fs_foodSearch(clientFood, clientCallback) {
 	    return;
 	  }
 	  
+	  console.log(result);
+	  
 	  var foodList = result.foods.food;
 	  var foodRE = new RegExp(clientFood, 'i');
 	  

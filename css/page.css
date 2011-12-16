@@ -60,6 +60,38 @@ label[for="stateSelect"] {
 	margin-top: 136px
 }
 
+.linked-red td {
+  background-color: #ff9896;
+  color: black;
+}
 
+.linked-blue td {
+  background-color: #aec7e8;
+  color: black;
+}
 
+.linked-green td {
+  background-color: #98df8a;
+  color: black;
+}
+
+.linked-orange td {
+  background-color: #ffbb78;
+  color: black;
+}
+
+.linked-yellow td {
+  background-color: #ffff99;
+  color: black;
+}
+
+.linked-purple td {
+  background-color: #c5b0d5;
+  color: black;
+}
+
+.linked-blue td {
+  background-color: #ffffff;
+  color: black;
+}
 

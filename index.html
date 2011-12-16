@@ -169,7 +169,9 @@ var arcs = vis.add(pv.Wedge)
     .angle(function(d) 2 * Math.PI / 12)
     .fillStyle(function(d) COLORS[d.color].hex)
     .lineWidth(1)
-    .strokeStyle("#444");
+    .strokeStyle("#444")
+    .event('mouseover', function(d) linkedBrush(d))
+    .event('mouseout', function(d) clearLinkedBrush(d));
 
 // Radial gridlines
 var months = vis.add(pv.Wedge)
@@ -236,6 +238,20 @@ pv.Behavior.dragCircle = function() {
     pv.listen(window, "mouseup", mouseup);
     return mousedown;
 };
+
+function linkedBrush(foodsObj) {
+  var cls = 'linked-' + foodsObj.color;
+  for (foodIdx in foodsObj.foods) 
+    $('#' + foodsObj.foods[foodIdx].food).addClass(cls);
+  console.log($('#'+foodsObj.foods[0].food));
+}
+
+function clearLinkedBrush(foodsObj) {
+  var cls = 'linked-' + foodsObj.color;
+  for (foodIdx in foodsObj.foods) 
+    $('#' + foodsObj.foods[foodIdx].food).removeClass(cls);
+
+}
 
 function getCurrentAngle() {
     return handle[1].theta;
@@ -410,7 +426,7 @@ pv.listen(window, "mousedown", function() self.focus());
       </div>
     </div>
     <div class="row" id="nutrients">
-      <table class="zebra-striped">
+      <table>
         <thead>
           <th>Name</th>
           <th>Protein (g)</th>

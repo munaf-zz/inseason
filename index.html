@@ -177,7 +177,7 @@ var arcs = vis.add(pv.Wedge)
 var months = vis.add(pv.Wedge)
     .data(pv.range(12))
     .innerRadius(function(d) 10)
-    .outerRadius(function(d) radius + 10)
+    .outerRadius(function(d) radius - 30)
     .fillStyle(null)
     .strokeStyle("black")
     .startAngle(function(d) d * section)
@@ -218,8 +218,8 @@ pv.Behavior.dragCircle = function() {
             // [LNF] Calc the angle between the mouse and the origin
             p.theta = Math.atan2(m.y - p0.y, m.x - p0.x);
             // [LNF] Translate the angle into cartesian coordinates, scaled to the center
-            p.x = p.fix.x = (Math.cos(p.theta) * radius) + xCenter;
-            p.y = p.fix.y = (Math.sin(p.theta) * radius) + yCenter;
+            p.x = p.fix.x = (Math.cos(p.theta) * (radius * 0.965)) + xCenter;
+            p.y = p.fix.y = (Math.sin(p.theta) * (radius * 0.965)) + yCenter;
             this.render();
         });
         pv.Mark.dispatch("drag", scene, index);
@@ -341,8 +341,8 @@ var handle = [
     // Handle
     {
         // Default the handle location to initAngle
-        x: (Math.cos(initAngle) * radius) + xCenter,
-        y: (Math.sin(initAngle) * radius) + yCenter,
+        x: (Math.cos(initAngle) * (radius * 0.965)) + xCenter,
+        y: (Math.sin(initAngle) * (radius * 0.965)) + yCenter,
         theta: initAngle
     }
 ];
@@ -353,7 +353,7 @@ vis.add(pv.Line)
     .top(function(d) d.y)
     .interpolate("linear")
     .segmented(false)
-    .strokeStyle("#000")
+    .strokeStyle("#99ccff")
     .lineWidth(2);
 
 // Handle dot
@@ -363,7 +363,7 @@ vis.add(pv.Dot)
     .top(function(d) d.y)
     .radius(7)
     .cursor(function(d) d.origin == true ? "" : "move")
-    .strokeStyle(function(d) d.origin == true ? null : "#000")
+    .strokeStyle(function(d) d.origin == true ? null : "#99ccff")
     .fillStyle(function(d) d.origin == true ? null : this.strokeStyle().alpha(.4))
     .event("mousedown", pv.Behavior.dragCircle())
     .event("dragstart", null)

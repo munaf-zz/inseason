@@ -43,7 +43,8 @@ label[for="stateSelect"] {
 }
 
 #stateSelect {
-	margin-top: -9px
+	margin-top: -9px;
+	color: #444
 }
 
 #location .input,

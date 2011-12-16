@@ -41,7 +41,7 @@ function fs_foodSearch(clientFood, clientCallback) {
 	  if (result.error) {
 	    console.log("Error in fs_foodSearch");
 	    console.log(result.error.message);
-	    alert("There was a problem with the FatSecret API (see console)");
+	    //alert("There was a problem with the FatSecret API (see console)");
 	    return;
 	  }
 	  

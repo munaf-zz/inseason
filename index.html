@@ -146,12 +146,78 @@
       <div class="span-two-thirds" id="viz">
       <script type="text/javascript+protovis">
 
+// This maps each month segment to a set of angles
+var monthAngles = [
+    {
+        month: 0,
+        startAngle: -(Math.PI / 2),
+        endAngle: -(Math.PI / 3)
+    },
+    {
+        month: 1,
+        startAngle: -(Math.PI / 3),
+        endAngle: -(Math.PI / 6)
+    },
+    {
+        month: 2,
+        startAngle: -(Math.PI / 6),
+        endAngle: 0
+    },
+    {
+        month: 3,
+        startAngle: 0,
+        endAngle: (Math.PI / 6)
+    },
+    {
+        month: 4,
+        startAngle: (Math.PI / 6),
+        endAngle: (Math.PI / 3)
+    },
+    {
+        month: 5,
+        startAngle: (Math.PI / 3),
+        endAngle: (Math.PI / 2)
+    },
+    {
+        month: 6,
+        startAngle: (Math.PI / 2),
+        endAngle: (2 * Math.PI / 3)
+    },
+    {
+        month: 7,
+        startAngle: (2 * Math.PI / 3),
+        endAngle: (5 * Math.PI / 6)
+    },
+    {
+        month: 8,
+        startAngle: (5 * Math.PI / 6),
+        endAngle: Math.PI
+    },
+    {
+        month: 9,
+        startAngle: -Math.PI,
+        endAngle: -(5 * Math.PI / 6)
+    },
+    {
+        month: 10,
+        startAngle: -(5 * Math.PI / 6),
+        endAngle: -(2 * Math.PI / 3)
+    },
+    {
+        month: 11,
+        startAngle: -(2 * Math.PI / 3),
+        endAngle: -(Math.PI / 2)
+    }
+];
+
+var currentMonth = (new Date()).getMonth();
+
 var w = 500,
     h = 500,
     radius = w / 2,
     xCenter = w / 2,
     yCenter = w / 2,
-    initAngle = 0,
+    initAngle = monthAngles[currentMonth].startAngle + (Math.PI / 12),
     section = (2*Math.PI) / 12;
 
 var vis = new pv.Panel()
@@ -257,70 +323,6 @@ function getCurrentAngle() {
     return handle[1].theta;
 }
 
-// This maps each month segment to a set of angles
-var monthAngles = [
-    {
-        month: 0,
-        startAngle: -(Math.PI / 2),
-        endAngle: -(Math.PI / 3)
-    },
-    {
-        month: 1,
-        startAngle: -(Math.PI / 3),
-        endAngle: -(Math.PI / 6)
-    },
-    {
-        month: 2,
-        startAngle: -(Math.PI / 6),
-        endAngle: 0
-    },
-    {
-        month: 3,
-        startAngle: 0,
-        endAngle: (Math.PI / 6)
-    },
-    {
-        month: 4,
-        startAngle: (Math.PI / 6),
-        endAngle: (Math.PI / 3)
-    },
-    {
-        month: 5,
-        startAngle: (Math.PI / 3),
-        endAngle: (Math.PI / 2)
-    },
-    {
-        month: 6,
-        startAngle: (Math.PI / 2),
-        endAngle: (2 * Math.PI / 3)
-    },
-    {
-        month: 7,
-        startAngle: (2 * Math.PI / 3),
-        endAngle: (5 * Math.PI / 6)
-    },
-    {
-        month: 8,
-        startAngle: (5 * Math.PI / 6),
-        endAngle: Math.PI
-    },
-    {
-        month: 9,
-        startAngle: -Math.PI,
-        endAngle: -(5 * Math.PI / 6)
-    },
-    {
-        month: 10,
-        startAngle: -(5 * Math.PI / 6),
-        endAngle: -(2 * Math.PI / 3)
-    },
-    {
-        month: 11,
-        startAngle: -(2 * Math.PI / 3),
-        endAngle: -(Math.PI / 2)
-    }
-];
-
 // Gets the month that the handle is currently resting on
 function getSelectedMonth() {
     var theta = getCurrentAngle();
@@ -418,6 +420,8 @@ function handleUpdate() {
   }
   vis.render();
 }
+
+handleUpdate();
 
 vis.render();
 pv.listen(window, "mousedown", function() self.focus());

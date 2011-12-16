@@ -16,6 +16,7 @@ $('#stateSelect').change(function() {
   }
   CURRENT_STATE = index;
   filterVizState(CURRENT_STATE);
+  refreshTable();
 });
 
 // Updates the global STATE_DATA frame.

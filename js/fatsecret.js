@@ -71,7 +71,7 @@ function fs_getFood(foodObj, clientFood, clientCallback) {
 	  if (result.error) {
 	    console.log("Error in fs_getFood");
 	    console.log(result.error.message);
-	    alert("There was a problem with the FatSecret API (see console)");
+	    //alert("There was a problem with the FatSecret API (see console)");
 	    return;
 	  }
 	  
@@ -114,7 +114,7 @@ function fs_call(method, methodData, callback) {
   	success: callback,
   	failure: function(data) {
   	  console.error(JSON.parse(data.text));
-      alert("Can't connect to FatSecret API (see console)");
+      //alert("Can't connect to FatSecret API (see console)");
   	},
   	headers: {
   	  // CORS is still an issue. Best bet is to run with security disabled for now.

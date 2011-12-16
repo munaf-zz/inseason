@@ -355,13 +355,49 @@ vis.add(pv.Dot)
 
 function handleUpdate() {
     CURRENT_MONTH = getSelectedMonth();
-    
+    // So we don't overload the API/cache
     if (CURRENT_MONTH != OTHER_MONTH) {
         OTHER_MONTH = CURRENT_MONTH;
+        
+        $("#nutrientsTB").empty();
+        
         var foods = selectedFoods(CURRENT_STATE, CURRENT_MONTH);
         console.log(foods);
+        
         fs_getFoods(foods, function(food) {
-            console.log(food);
+            
+            console.log(food);            
+            var servingsList = food.food.servings.serving;
+            var serving;
+            
+            for (s in servingsList) {
+                if (servingsList[s].metric_serving_amount == "100.000") {
+                    serving = servingsList[s];
+                    console.log("Found 100g serving");
+                    console.log(serving);
+                    break;
+                }
+            }
+            
+            if (!serving) {
+                serving = servingsList[0];
+                console.log("No 100g serving found; defaulting to first serving");
+                console.log(serving);
+            }
+            
+            var foodHtml =
+            '<tr>' +
+                '<td>' + food.food.food_name + '</td>' +
+                '<td>' + serving.protein + '</td>' +
+                '<td>' + serving.calcium + '</td>' +
+                '<td>' + serving.sodium + '</td>' +
+                '<td>' + serving.fiber + '</td>' +
+                '<td>' + serving.vitamin_c + '</td>' +
+                '<td>' + serving.potassium + '</td>' +
+                '<td>' + serving.fat + '</td>' +
+            '</tr>';
+                
+            $("#nutrientsTB").append(foodHtml);
         });
   }
   vis.render();
@@ -385,7 +421,7 @@ pv.listen(window, "mousedown", function() self.focus());
           <th>Potassium (mg)</th>
           <th>Fat (g)</th>
         </thead>
-        <tbody id="">
+        <tbody id="nutrientsTB">
         </tbody>
       </table>
     </div>

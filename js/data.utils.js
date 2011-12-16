@@ -7,13 +7,13 @@ var STATE_DATA = arcsPerState(CURRENT_STATE);
 
 // Global color mapping object.
 var COLORS = {
-  "red": "#ff9896",
-  "blue": "#aec7e8",
-  "green": "#98df8a",
-  "orange": "#ffbb78",
-  "yellow": "#ffff99",
-  "purple": "#c5b0d5",
-  "white": "#ffffff"
+  "red": {ind: 0, hex: "#ff9896"},
+  "blue": {ind: 1, hex: "#aec7e8"},
+  "green": {ind: 2, hex: "#98df8a"},
+  "orange": {ind: 3, hex: "#ffbb78"},
+  "yellow": {ind: 4, hex: "#ffff99"},
+  "purple": {ind: 5, hex: "#c5b0d5"},
+  "white": {ind: 6, hex: "#ffffff"}
 };
 
 // Generates an array geared for searching FatSecret.
@@ -30,45 +30,50 @@ function selectedFoods(state, month) {
   return searchList;
 }
 
-// Generates an object of color arcs, year-round for a specific state.
-// Called when "states" dropdown changes.
-function arcsPerState(state) { 
-  var mnths, fds, arcs = [];
-  var i, j, c;
-
-  function ind(col) {
-    var out = NaN;
-    for (var i=0; i<arcs.length; i++) {
-      if (arcs[i]['color'] == col) {
-        out = i;
-        break;
+function arcsPerState(state) {
+  
+  var months = data[state].months;
+  var foods, food, arcs = [];
+  var monthColors = {};
+  
+  for (monthIdx in months) {
+      
+    foods = months[monthIdx].foods;
+    if (foods.length == 0) continue;
+    
+    monthColors = {
+      'red': [],
+      'blue': [],
+      'green': [],
+      'orange': [],
+      'yellow': [],
+      'purple': [],
+      'white': []
+    };
+    
+    // Collect all the foods by color for this month
+    for (color in monthColors) {
+      for (foodIdx in foods) {
+        food = foods[foodIdx];
+        for (colIdx in food.colors) {
+          if (food.colors[colIdx] == color) {
+            monthColors[color].push(food);
+          }
+        }
       }
     }
-    return out;
+    
+    // Collect all the arcs
+    for (color in monthColors) {
+      if (monthColors[color].length > 0) {
+        arcs.push({
+          start: monthIdx,
+          foods: monthColors[color],
+          color: color
+        });
+      }
+    }
   }
   
-  mnths = data[state].months;
-  for (i=0; i<mnths.length; i++) {
-    fds = mnths[i].foods;
-    for (j=0; j<fds.length; j++) {
-      for (c=0; c<fds[j].colors.length; c++) {
-        var col = fds[j].colors[c];
-        x = ind(col);
-        
-        if (x >= 0) {
-          arcs[x]['foods'].push(fds[j]);
-          arcs[x]['len'] = i - arcs[x]['start'];
-        }
-        else {
-          arcs.push({
-            color: fds[j].colors[c],
-            start: i,
-            len: 1,
-            foods: [fds[j]]
-          });
-        }
-      }
-    }
-  }
-  return arcs; // array of arcs, labeled by color
+  return arcs;
 }

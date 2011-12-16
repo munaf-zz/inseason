@@ -75,6 +75,8 @@ function fs_getFood(foodObj, clientFood, clientCallback) {
 	    return;
 	  }
 	  
+	  result['ourFoodName'] = clientFood;
+	  
     console.log("Storing " + foodObj.food_name + " (clientName=" + clientFood + ") in cache");
     FOOD_CACHE[clientFood] = result;
     

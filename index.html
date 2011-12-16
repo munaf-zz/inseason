@@ -170,18 +170,26 @@ var arcs = vis.add(pv.Wedge)
     .fillStyle(function(d) COLORS[d.color].hex)
     .lineWidth(1)
     .strokeStyle("#444")
-    .event('mouseover', function(d) linkedBrush(d))
+    .text("blahhhh")
+    .event('mouseover', function(d) {linkedBrush(d); pv.Behavior.tipsy({gravity: "w", fade: true});})
     .event('mouseout', function(d) clearLinkedBrush(d));
 
 // Radial gridlines
 var months = vis.add(pv.Wedge)
-    .data(pv.range(12))
+    .data(MONTHS)
     .innerRadius(function(d) 10)
     .outerRadius(function(d) radius + 10)
     .fillStyle(null)
     .strokeStyle("black")
-    .startAngle(function(d) d * section)
-    .angle(0);
+    .startAngle(function(d) this.index * section)
+    .angle(function() Math.PI/6);
+
+months.anchor('outer').add(pv.Label)
+    .text(function(d) d)
+    .textStyle('white')
+    .textAlign('center')
+    .textBaseline('bottom')
+    .textAngle(function() this.anchorTarget().midAngle() + Math.PI / 2);
 
 // New PV behavior that will translate mouse position onto a circle
 pv.Behavior.dragCircle = function() {

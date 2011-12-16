@@ -16,6 +16,22 @@ var COLORS = {
   "white": {ind: 6, hex: "#ffffff"}
 };
 
+// Global month mapping array.
+var MONTHS = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+];
+
 // Generates an array geared for searching FatSecret.
 // Called when minute hand is dropped over a specific month.
 // state, month are indexes for the global data array.

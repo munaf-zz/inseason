@@ -1,0 +1,35 @@
+InSeason - Local Produce Visualization
+Final Project for SI 649, Information Visualization, Fall 2011
+
+Team:
+Munaf Assaf, Naim Falandino, Evan Kerrigan, Mary Zhu
+{munaf, naim, kerrigev, maryzhu}@umich.edu
+
+
+!! VERY IMPORTANT NOTE !!
+
+Most modern browsers have security to prevent cross-site scripting attacks. Because
+our project makes use of a remote API (FatSecret) this becomes an issue when opening
+the index.html directly from your hard drive. One solution is to use the
+Access-Control-Allow-Origin header to trigger the Cross-Origin Resource Sharing
+(CORS) mechanism that modern browsers support. We have attempted to do this with
+jsOAuth, but unfortunately because the page is not being served from a host this
+does not work. Luckily there is a good workaround. You can start an instance of your
+browser with security disabled to prevent the remote requests from being blocked.
+
+For Chrome, you can do this by executing the following command in a shell:
+
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security --allow-file-access-from-files --allow-file-access --user-data-dir=chrome-test
+
+This will create a directory called chrome-test in whatever directory you execute
+the command from; this contains a new Chrome profile, so your normal profile is kept
+safe. Loading our index.html in this instance will allow the remote requests to go
+through properly, so it is important to do this!
+
+
+
+This project makes use of Protovis, jQuery, a modified version of jsOAuth, and the
+FatSecret API for looking up foods and nutritional information. A spreadsheet of raw
+CSV data created by hand in Google Docs is preprocessed by a Perl script into JSON
+which is fed into the visualization itself.
+

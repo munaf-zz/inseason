@@ -46,14 +46,15 @@ function arcsPerState(state) {
     }
     return out;
   }
-
+  
   mnths = data[state].months;
   for (i=0; i<mnths.length; i++) {
     fds = mnths[i].foods;
     for (j=0; j<fds.length; j++) {
       for (c=0; c<fds[j].colors.length; c++) {
-        x = ind(fds[j].colors[c]);
-
+        var col = fds[j].colors[c];
+        x = ind(col);
+        
         if (x >= 0) {
           arcs[x]['foods'].push(fds[j]);
           arcs[x]['len'] = i - arcs[x]['start'];
@@ -62,7 +63,7 @@ function arcsPerState(state) {
           arcs.push({
             color: fds[j].colors[c],
             start: i,
-            len: 0,
+            len: 1,
             foods: [fds[j]]
           });
         }

@@ -1,32 +1,60 @@
 #viz {
-  text-align: center;
+  text-align: center
 }
 
 body { 
 	background-color: #333;
-	color: #ccc;
+	color: #ccc
 }
 
 h1, fieldset legend, label, th, td {
-	color: #ccc;
+	color: #ccc
 }
 
 h1 {
 	text-shadow: 0 1px 0 #eee;
 	font-size: 6em;
 	line-height: 1.618;
+	margin-top: -2px
 }
 
 legend, th {
-	text-shadow: 0 1px 1px #eee;
+	text-shadow: 0 1px 1px #eee
 }
 
 #location form fieldset legend {
-	padding-left: 0 !important;
+	padding-top: 4px
+}
+#nutrition form fieldset legend {
+	padding-top: 24px
 }
 
-.clearfix label {
+#location form fieldset legend,
+#nutrition form fieldset legend {
+	padding-left: 0 !important
+}
+
+label[for="stateSelect"] {
 	text-align: left !important;
 	float: right !important;
 	margin-right: 90px !important;
+	margin-top: -3px;
+	width: 0 !important
 }
+
+#stateSelect {
+	margin-top: -2px
+}
+
+#location .input,
+#nutrition .input { 
+	margin-left: 0 !important
+}
+
+#inputs-list {
+	margin-bottom: 6px
+}
+
+
+
+

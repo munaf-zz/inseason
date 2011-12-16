@@ -243,62 +243,62 @@
         // This maps each month segment to a set of angles
         var monthAngles = [
             {
-                month: 1,
+                month: 0,
                 startAngle: -(Math.PI / 2),
                 endAngle: -(Math.PI / 3)
             },
             {
-                month: 2,
+                month: 1,
                 startAngle: -(Math.PI / 3),
                 endAngle: -(Math.PI / 6)
             },
             {
-                month: 3,
+                month: 2,
                 startAngle: -(Math.PI / 6),
                 endAngle: 0
             },
             {
-                month: 4,
+                month: 3,
                 startAngle: 0,
                 endAngle: (Math.PI / 6)
             },
             {
-                month: 5,
+                month: 4,
                 startAngle: (Math.PI / 6),
                 endAngle: (Math.PI / 3)
             },
             {
-                month: 6,
+                month: 5,
                 startAngle: (Math.PI / 3),
                 endAngle: (Math.PI / 2)
             },
             {
-                month: 7,
+                month: 6,
                 startAngle: (Math.PI / 2),
                 endAngle: (2 * Math.PI / 3)
             },
             {
-                month: 8,
+                month: 7,
                 startAngle: (2 * Math.PI / 3),
                 endAngle: (5 * Math.PI / 6)
             },
             {
-                month: 9,
+                month: 8,
                 startAngle: (5 * Math.PI / 6),
                 endAngle: Math.PI
             },
             {
-                month: 10,
+                month: 9,
                 startAngle: -Math.PI,
                 endAngle: -(5 * Math.PI / 6)
             },
             {
-                month: 11,
+                month: 10,
                 startAngle: -(5 * Math.PI / 6),
                 endAngle: -(2 * Math.PI / 3)
             },
             {
-                month: 12,
+                month: 11,
                 startAngle: -(2 * Math.PI / 3),
                 endAngle: -(Math.PI / 2)
             }
@@ -350,8 +350,15 @@
             .fillStyle(function(d) d.origin == true ? null : this.strokeStyle().alpha(.4))
             .event("mousedown", pv.Behavior.dragCircle())
             .event("dragstart", null)
-            .event("drag", vis);
-       
+            .event("drag", handleUpdate);
+        
+        function handleUpdate() {
+          CURRENT_MONTH = getSelectedMonth();
+          var foods = selectedFoods(CURRENT_STATE, CURRENT_MONTH);
+          console.log(foods);
+          vis.render();
+        }
+
         vis.render();
         pv.listen(window, "mousedown", function() self.focus());
         </script>

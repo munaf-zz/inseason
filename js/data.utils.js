@@ -1,6 +1,8 @@
 
 // Working data set for currently selected state.
-var STATE_DATA = arcsPerState(0);
+var CURRENT_STATE = 0;
+var CURRENT_MONTH = 1;
+var STATE_DATA = arcsPerState(CURRENT_STATE);
 
 // Global color mapping object.
 var COLORS = {
@@ -19,7 +21,7 @@ var COLORS = {
 function selectedFoods(state, month) { 
   var i,
       searchList = [], 
-      foods = data[state].months[month].foods;
+      foods = data[state].months[month].foods || [];
 
   for (i = 0; i < foods.length; i++) 
     searchList.push(foods[i].food);

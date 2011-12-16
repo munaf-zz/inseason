@@ -237,7 +237,7 @@ var arcs = vis.add(pv.Wedge)
     .lineWidth(1)
     .strokeStyle("#444")
     .text("blahhhh")
-    .event('mouseover', function(d) {linkedBrush(d); pv.Behavior.tipsy({gravity: "w", fade: true});})
+    .event('mouseover', function(d) linkedBrush(d))
     .event('mouseout', function(d) clearLinkedBrush(d));
 
 // Radial gridlines

@@ -420,19 +420,21 @@ function refreshTable() {
             console.log(serving);
         }
         
-        var foodHtml =
-        '<tr id="' + food.ourFoodName.split(' ').join('') + '">' +
-            '<td>' + food.food.food_name + '</td>' +
-            '<td>' + serving.protein + '</td>' +
-            '<td>' + serving.calcium + '</td>' +
-            '<td>' + serving.sodium + '</td>' +
-            '<td>' + serving.fiber + '</td>' +
-            '<td>' + serving.vitamin_c + '</td>' +
-            '<td>' + serving.potassium + '</td>' +
-            '<td>' + serving.fat + '</td>' +
-        '</tr>';
-            
-        $("#nutrientsTB").append(foodHtml);
+        if ($("#" + food.ourFoodName.split(' ').join('')).length == 0) {
+            var foodHtml =
+            '<tr id="' + food.ourFoodName.split(' ').join('') + '">' +
+                '<td>' + food.food.food_name + '</td>' +
+                '<td>' + serving.protein + '</td>' +
+                '<td>' + serving.calcium + '</td>' +
+                '<td>' + serving.sodium + '</td>' +
+                '<td>' + serving.fiber + '</td>' +
+                '<td>' + serving.vitamin_c + '</td>' +
+                '<td>' + serving.potassium + '</td>' +
+                '<td>' + serving.fat + '</td>' +
+            '</tr>';
+
+            $("#nutrientsTB").append(foodHtml);
+        }
     });
     
     vis.render();

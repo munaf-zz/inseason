@@ -32,6 +32,29 @@ var MONTHS = [
   'December'
 ];
 
+// Given a MONTHS array index, return the wedge index we need to fill 
+// in on the viz circle.
+// In protovis, January  -> 3-4 O'clock
+//              February -> 4-5 O'clock, etc... 
+// In our assumptions, January -> 12 O'clock
+function alignMonth(month_idx) {
+  if (month_idx < 9)
+    return month_idx + 3;
+  else
+    return month_idx - 9;
+}
+
+function alignMonthName(month_name) {
+  var base, offset;
+  for (var i = 0; i < MONTHS.length; i++) {
+    if (MONTHS[i] == month_name) {
+      base = i;
+      break;
+    }
+  }
+  return MONTHS[alignMonth(base)];
+}
+
 // Generates an array geared for searching FatSecret.
 // Called when minute hand is dropped over a specific month.
 // state, month are indexes for the global data array.

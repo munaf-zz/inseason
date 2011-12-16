@@ -251,7 +251,7 @@ var months = vis.add(pv.Wedge)
     .angle(function() Math.PI/6);
 
 months.anchor('outer').add(pv.Label)
-    .text(function(d) d)
+    .text(function(d) alignMonthName(d))
     .textStyle('white')
     .textAlign('center')
     .textBaseline('bottom')

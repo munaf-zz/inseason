@@ -25,7 +25,7 @@ var w = 400,
     xCenter = w / 2,
     yCenter = h / 2,
     radius = 160,
-    initAngle = degToRad(270);
+    initAngle = -(Math.PI / 2);
 
 // New PV behavior that will translate mouse position onto a circle
 pv.Behavior.dragCircle = function() {
@@ -83,86 +83,80 @@ pv.Behavior.dragCircle = function() {
     return mousedown;
 };
 
-function degToRad(degs) {
-    return degs * (Math.PI / 180);
-}
-
-function radToDeg(rads) {
-    return rads * (180 / Math.PI);
-}
-
 function getCurrentAngle() {
     return handle[1].theta;
 }
 
+// This maps each month segment to a set of angles
 var monthAngles = [
     {
         month: 1,
-        startAngle: degToRad(270),
-        endAngle: degToRad(300)
+        startAngle: -(Math.PI / 2),
+        endAngle: -(Math.PI / 3)
     },
     {
         month: 2,
-        startAngle: degToRad(300),
-        endAngle: degToRad(330)
+        startAngle: -(Math.PI / 3),
+        endAngle: -(Math.PI / 6)
     },
     {
         month: 3,
-        startAngle: degToRad(330),
-        endAngle: degToRad(360)
+        startAngle: -(Math.PI / 6),
+        endAngle: 0
     },
     {
         month: 4,
-        startAngle: degToRad(0),
-        endAngle: degToRad(30)
+        startAngle: 0,
+        endAngle: (Math.PI / 6)
     },
     {
         month: 5,
-        startAngle: degToRad(30),
-        endAngle: degToRad(60)
+        startAngle: (Math.PI / 6),
+        endAngle: (Math.PI / 3)
     },
     {
         month: 6,
-        startAngle: degToRad(60),
-        endAngle: degToRad(90)
+        startAngle: (Math.PI / 3),
+        endAngle: (Math.PI / 2)
     },
     {
         month: 7,
-        startAngle: degToRad(90),
-        endAngle: degToRad(120)
+        startAngle: (Math.PI / 2),
+        endAngle: (2 * Math.PI / 3)
     },
     {
         month: 8,
-        startAngle: degToRad(120),
-        endAngle: degToRad(150)
+        startAngle: (2 * Math.PI / 3),
+        endAngle: (5 * Math.PI / 6)
     },
     {
         month: 9,
-        startAngle: degToRad(150),
-        endAngle: degToRad(180)
+        startAngle: (5 * Math.PI / 6),
+        endAngle: Math.PI
     },
     {
         month: 10,
-        startAngle: degToRad(180),
-        endAngle: degToRad(210)
+        startAngle: -Math.PI,
+        endAngle: -(5 * Math.PI / 6)
     },
     {
         month: 11,
-        startAngle: degToRad(210),
-        endAngle: degToRad(240)
+        startAngle: -(5 * Math.PI / 6),
+        endAngle: -(2 * Math.PI / 3)
     },
     {
         month: 12,
-        startAngle: degToRad(240),
-        endAngle: degToRad(270)
+        startAngle: -(2 * Math.PI / 3),
+        endAngle: -(Math.PI / 2)
     }
 ];
 
+// Gets the month that the handle is currently resting on
 function getSelectedMonth() {
     var theta = getCurrentAngle();
     for (m in monthAngles)
-        if (theta > monthAngles[m].startAngle &&
-            theta < monthAngles[m].endAngle)
+        if (theta >= monthAngles[m].startAngle &&
+            theta <= monthAngles[m].endAngle)
             return monthAngles[m].month;
 }
 
